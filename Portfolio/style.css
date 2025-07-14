@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #001a12;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid #14532d;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.highlight {
+  color: #00ff99;
+}
+
+.tagline {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #b5b5b5;
+}
+
+section {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  background-color: #0f1f17;
+  border-radius: 1rem;
+  border: 1px solid #14532d;
+}
+
+h2 {
+  color: #00ffcc;
+  border-bottom: 1px solid #14532d;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.profile-pic {
+  width: 140px;
+  border-radius: 50%;
+  border: 3px solid #00ffcc;
+  display: block;
+  margin: 1rem auto;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  justify-content: center;
+}
+
+.skills-list li {
+  background-color: #14532d;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #888;
+  background-color: #001a12;
+  font-size: 0.9rem;
+}
