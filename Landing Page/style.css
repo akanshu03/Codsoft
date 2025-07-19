@@ -1,0 +1,193 @@
+:root {
+  --primary-color: #3949AB;
+  --accent-color: #FFB300;
+  --bg-color: #f3f4f7;
+  --text-color: #222;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 20px 40px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #ffa000;
+}
+
+.features {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.feature-boxes {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: #f0f0f0;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.quote {
+  background: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  font-style: italic;
+  color: #666;
+}
+
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.contact p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.contact a {
+  color: #3949AB;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .feature-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact p {
+    font-size: 0.9rem;
+  }
+}
